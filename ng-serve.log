@@ -1,0 +1,97 @@
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files                                          | Names                                    |  Raw Size
+vendor.js                                                    | vendor                                   |   6.21 MB |
+styles.css, styles.js                                        | styles                                   |   1.80 MB |
+main.js                                                      | main                                     |   1.68 MB |
+scripts.js                                                   | scripts                                  | 953.90 kB |
+polyfills.js                                                 | polyfills                                | 419.06 kB |
+runtime.js                                                   | runtime                                  |  12.97 kB |
+
+| Initial Total                            |  11.05 MB
+
+Lazy Chunk Files                                             | Names                                    |  Raw Size
+src_app_pages_pages_module_ts.js                             | pages-pages-module                       |   8.14 MB |
+src_app_pages_charts_charts_module_ts.js                     | charts-charts-module                     |   3.16 MB |
+src_app_pages_modal-overlays_modal-overlays_module_ts.js     | modal-overlays-modal-overlays-module     |   2.37 MB |
+src_app_pages_tables_tables_module_ts.js                     | tables-tables-module                     |   1.55 MB |
+src_app_pages_extra-components_extra-components_module_ts.js | extra-components-extra-components-module |   1.22 MB |
+src_app_pages_forms_forms_module_ts.js                       | forms-forms-module                       | 325.00 kB |
+default-node_modules_tslib_tslib_es6_mjs.js                  | charts-charts-module                     |  20.18 kB |
+
+Build at: 2025-09-29T07:56:25.836Z - Hash: fb139cb8e9747935 - Time: 14523ms
+
+./node_modules/d3-sankey/node_modules/d3-array/src/merge.js - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js):
+Error: /workspace/node_modules/d3-sankey/node_modules/d3-array/src/merge.js: Cannot find module '/workspace/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/regeneratorValues'
+Require stack:
+- /workspace/node_modules/@babel/plugin-transform-runtime/lib/get-runtime-path/index.js
+- /workspace/node_modules/@babel/plugin-transform-runtime/lib/index.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/babel/presets/application.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js
+- /workspace/node_modules/@angular-devkit/build-angular/node_modules/webpack/lib/ProgressPlugin.js
+- /workspace/node_modules/@angular-devkit/build-angular/node_modules/webpack/lib/index.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/utils/webpack-browser-config.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/builders/dev-server/index.js
+- /workspace/node_modules/@angular-devkit/architect/node/node-modules-architect-host.js
+- /workspace/node_modules/@angular-devkit/architect/node/index.js
+- /workspace/node_modules/@angular/cli/src/command-builder/architect-base-command-module.js
+- /workspace/node_modules/@angular/cli/src/command-builder/architect-command-module.js
+- /workspace/node_modules/@angular/cli/src/commands/build/cli.js
+- /workspace/node_modules/@angular/cli/src/command-builder/command-runner.js
+- /workspace/node_modules/@angular/cli/lib/cli/index.js
+- /workspace/node_modules/@angular/cli/lib/init.js
+
+./merge.js - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js):
+Error: /workspace/node_modules/d3-sankey/node_modules/d3-array/src/merge.js: Cannot find module '/workspace/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/regeneratorValues'
+Require stack:
+- /workspace/node_modules/@babel/plugin-transform-runtime/lib/get-runtime-path/index.js
+- /workspace/node_modules/@babel/plugin-transform-runtime/lib/index.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/babel/presets/application.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js
+- /workspace/node_modules/@angular-devkit/build-angular/node_modules/webpack/lib/ProgressPlugin.js
+- /workspace/node_modules/@angular-devkit/build-angular/node_modules/webpack/lib/index.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/utils/webpack-browser-config.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/builders/dev-server/index.js
+- /workspace/node_modules/@angular-devkit/architect/node/node-modules-architect-host.js
+- /workspace/node_modules/@angular-devkit/architect/node/index.js
+- /workspace/node_modules/@angular/cli/src/command-builder/architect-base-command-module.js
+- /workspace/node_modules/@angular/cli/src/command-builder/architect-command-module.js
+- /workspace/node_modules/@angular/cli/src/commands/build/cli.js
+- /workspace/node_modules/@angular/cli/src/command-builder/command-runner.js
+- /workspace/node_modules/@angular/cli/lib/cli/index.js
+- /workspace/node_modules/@angular/cli/lib/init.js
+
+./node_modules/d3-array/src/merge.js - Error: Module build failed (from ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js):
+Error: /workspace/node_modules/d3-array/src/merge.js: Cannot find module '/workspace/node_modules/@angular-devkit/build-angular/node_modules/@babel/runtime/helpers/esm/regeneratorValues'
+Require stack:
+- /workspace/node_modules/@babel/plugin-transform-runtime/lib/get-runtime-path/index.js
+- /workspace/node_modules/@babel/plugin-transform-runtime/lib/index.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/babel/presets/application.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js
+- /workspace/node_modules/@angular-devkit/build-angular/node_modules/webpack/lib/ProgressPlugin.js
+- /workspace/node_modules/@angular-devkit/build-angular/node_modules/webpack/lib/index.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/utils/webpack-browser-config.js
+- /workspace/node_modules/@angular-devkit/build-angular/src/builders/dev-server/index.js
+- /workspace/node_modules/@angular-devkit/architect/node/node-modules-architect-host.js
+- /workspace/node_modules/@angular-devkit/architect/node/index.js
+- /workspace/node_modules/@angular/cli/src/command-builder/architect-base-command-module.js
+- /workspace/node_modules/@angular/cli/src/command-builder/architect-command-module.js
+- /workspace/node_modules/@angular/cli/src/commands/build/cli.js
+- /workspace/node_modules/@angular/cli/src/command-builder/command-runner.js
+- /workspace/node_modules/@angular/cli/lib/cli/index.js
+- /workspace/node_modules/@angular/cli/lib/init.js
+
+
+
+** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+
+
+✖ Failed to compile.
